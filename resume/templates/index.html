@@ -156,9 +156,15 @@
                 <div class="resume-block">
 
                     <div class="resume-block__header">
-                        <h4 class="h3"><a href="https://github.com/toba-madamori">Github</a></h4>
+                        <h4><a href="https://github.com/toba-madamori">Github</a></h4>
                        
                     </div>
+                    <div class="resume-block__header">
+                        {% for resume in file %}
+                            <h4><a href="{{ resume.resume.url }}" download="{{ resume.resume.url }}">Resume</a></h4>
+                        {% endfor %}
+                    </div>
+
 
                    
 
@@ -226,7 +232,7 @@
                         <strong>HTML</strong>
                         </li>
                         <li>
-                        <div class="progress percent45"></div>
+                        <div class="progress percent15"></div>
                         <strong>CSS</strong>
                         </li>
                         <li>
